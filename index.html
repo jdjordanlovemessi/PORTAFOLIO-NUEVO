@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juan Jordan | Portafolio Profesional</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Archivo CSS principal -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Contenedor global para partículas atmosféricas -->
+    <div class="global-particles"></div>
+
+    <!-- Barra de Navegación -->
+    <nav class="navbar">
+        <a href="#hero" class="nav-brand">
+            <div class="brand-icon">
+                <i class="fa-solid fa-code"></i>
+            </div>
+            <div class="brand-text">
+                <span class="brand-name">Juan Jordan</span>
+                <span class="brand-role">Desarrollador Web</span>
+            </div>
+        </a>
+
+        <ul class="nav-links">
+            <li><a href="#about"><i class="fa-solid fa-user"></i> Sobre mí</a></li>
+            <li><a href="#skills"><i class="fa-solid fa-laptop-code"></i> Habilidades</a></li>
+            <li><a href="#projects"><i class="fa-solid fa-folder-open"></i> Proyectos</a></li>
+            <li><a href="#contact"><i class="fa-solid fa-envelope"></i> Contacto</a></li>
+        </ul>
+
+        <div class="availability-badge" title="Haz clic para ocultar/mostrar la barra">
+            <span class="pulse-dot"></span>
+            <span>Disponible</span>
+        </div>
+    </nav>
+
+    <!-- Sección Hero (Inicio) -->
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <div class="hero-text-area">
+                <span class="greeting">Hola, mi nombre es</span>
+                <div class="name-wrapper">
+                    <h1>Juan Jordan</h1>
+                </div>
+                <h2>TSU en Informática & Desarrollador Web</h2>
+                <p>Actualmente curso mi último año para graduarme de Ingeniero en Informática y este es mi portafolio profesional.</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn primary">Ver proyectos <i class="fa-solid fa-arrow-right"></i></a>
+                    <a href="#contact" class="btn secondary">Contáctame</a>
+                </div>
+            </div>
+
+            <!-- Mini Terminal de Código Interactiva -->
+            <div class="hero-code-card">
+                <div class="code-header">
+                    <span class="dot red"></span>
+                    <span class="dot yellow"></span>
+                    <span class="dot green"></span>
+                    <span class="code-title">perfil.js</span>
+                </div>
+                <div class="code-body">
+                    <p><span class="keyword">const</span> <span class="variable">developer</span> = {</p>
+                    <p class="indent"><span class="property">nombre</span>: <span class="string">"Juan Jordan"</span>,</p>
+                    <p class="indent"><span class="property">rol</span>: <span class="string">"Ingeniero en Informática"</span>,</p>
+                    <p class="indent"><span class="property">stack</span>: [<span class="string">"PHP"</span>, <span class="string">"MySQL"</span>, <span class="string">"JS"</span>],</p>
+                    <p class="indent"><span class="property">estado</span>: <span class="boolean">true</span></p>
+                    <p>};</p>
+                    <br>
+                    <p><span class="keyword">function</span> <span class="function">saludar</span>() {</p>
+                    <p class="indent"><span class="keyword">return</span> <span class="string">"¡Listo para nuevos retos!"</span>;</p>
+                    <p>}</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Sobre Mí -->
+    <section id="about" class="section">
+        <h2 class="section-title">Sobre Mí</h2>
+        <div class="about-card">
+            <p>Soy TSU en Informática cursando el último año de ingeniería en la UPTAG. Cuento con experiencia práctica en desarrollo web con PHP, JavaScript y MySQL, así como en soporte técnico, mantenimiento de ordenadores y diagnóstico de hardware. Me apasiona crear soluciones de software eficientes y estructuradas.</p>
+        </div>
+    </section>
+
+    <!-- Sección Habilidades -->
+    <section id="skills" class="section">
+        <h2 class="section-title">Habilidades Técnicas</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <i class="fa-brands fa-php" style="color: #777bb3;"></i>
+                <span>PHP</span>
+            </div>
+            <div class="skill-card">
+                <i class="fa-solid fa-database" style="color: #00758f;"></i>
+                <span>MySQL</span>
+            </div>
+            <div class="skill-card">
+                <i class="fa-brands fa-js" style="color: #f7df1e;"></i>
+                <span>JavaScript</span>
+            </div>
+            <div class="skill-card">
+                <i class="fa-brands fa-html5" style="color: #e34f26;"></i>
+                <span>HTML5</span>
+            </div>
+            <div class="skill-card">
+                <i class="fa-brands fa-bootstrap" style="color: #7952b3;"></i>
+                <span>Bootstrap</span>
+            </div>
+            <div class="skill-card">
+                <i class="fa-solid fa-microchip" style="color: #38bdf8;"></i>
+                <span>Hardware & PC</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Proyectos -->
+    <section id="projects" class="section">
+        <h2 class="section-title">Proyectos Destacados</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div>
+                    <div class="project-icon">
+                        <i class="fa-solid fa-cash-register" style="color: #38bdf8;"></i>
+                    </div>
+                    <h3>Sistema de Control de Ventas</h3>
+                    <p>Desarrollado como proyecto socio-integrativo para Inversiones Eudo C.A., enfocado en el control de inventario y gestión de transacciones comerciales.</p>
+                </div>
+                <div class="project-tech">
+                    <span>PHP</span>
+                    <span>MySQL</span>
+                    <span>JavaScript</span>
+                </div>
+            </div>
+            <div class="project-card">
+                <div>
+                    <div class="project-icon">
+                        <i class="fa-solid fa-laptop-code" style="color: #38bdf8;"></i>
+                    </div>
+                    <h3>Plataforma de Soporte Técnico</h3>
+                    <p>Sistema de gestión y seguimiento para diagnósticos de equipos de computación, mantenimiento preventivo y control de órdenes de servicio.</p>
+                </div>
+                <div class="project-tech">
+                    <span>HTML5</span>
+                    <span>Bootstrap</span>
+                    <span>PHP</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Contacto -->
+    <section id="contact" class="section">
+        <h2 class="section-title">Contacto</h2>
+        <div class="contact-container">
+            <div class="contact-info">
+                <h3>¡Hablemos de tu proyecto!</h3>
+                <p>Estoy disponible para colaboraciones, desarrollo web o consultoría técnica. Puedes escribirme directamente a través de mis redes o rellenar el formulario.</p>
+                <div class="social-links">
+                    <a href="https://t.me/tu_usuario" target="_blank" class="social-btn telegram">
+                        <i class="fa-brands fa-telegram"></i> Telegram
+                    </a>
+                    <a href="https://wa.me/tu_numero" target="_blank" class="social-btn whatsapp">
+                        <i class="fa-brands fa-whatsapp"></i> WhatsApp
+                    </a>
+                    <a href="mailto:correo@example.com" class="social-btn email">
+                        <i class="fa-solid fa-envelope"></i> Correo Electrónico
+                    </a>
+                </div>
+            </div>
+            <form class="contact-form" onsubmit="event.preventDefault(); alert('¡Mensaje enviado con éxito!');">
+                <div class="form-header">
+                    <i class="fa-solid fa-paper-plane"></i> Envíame un mensaje
+                </div>
+                <div class="input-group">
+                    <input type="text" id="name" placeholder=" " required>
+                    <label for="name">Tu Nombre</label>
+                </div>
+                <div class="input-group">
+                    <input type="email" id="email" placeholder=" " required>
+                    <label for="email">Tu Correo</label>
+                </div>
+                <div class="input-group">
+                    <textarea id="message" placeholder=" " required></textarea>
+                    <label for="message">Tu Mensaje</label>
+                </div>
+                <button type="submit" class="btn primary submit-btn">Enviar mensaje</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2026 Juan Diego Jordan Lugo. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Archivo JavaScript principal -->
+    <script src="main.js"></script>
+</body>
+</html>
